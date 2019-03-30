@@ -1,0 +1,181 @@
+/* GLOBAL */
+
+*, body {
+    padding: 0;
+    margin: 0;
+    font: 20px/1.5 Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+/* HEADER */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #afd2ff;
+    border-bottom: 2px solid #002453; 
+}
+#titleContainer {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    color: black;
+    font-family: 'Lato';
+    font-size: 30px;
+}
+header nav {
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header li {
+    margin-right: 50px;
+}
+header li:last-child {
+    margin-right: 0;
+}
+header a {
+    color: black;
+    font-family: 'Lato';
+}
+header a:link {
+    text-decoration: none;
+    color: black;
+}
+header a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* NOTE SECTION */
+
+#noteSection {
+    background: #002453;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#noteSection h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 150%;
+    font-family: 'Lato';
+    color: #afd2ff;
+    font-weight: bold;
+}
+#noteList {
+    background: #afd2ff;
+    min-height: 400px;
+    width: 80%;
+    list-style-position: inside;
+    padding: 10px;
+    border-radius: 10px;
+}
+#noteList li {
+    margin-bottom: 10px;
+    font-family: 'Lato';
+}
+#noteList li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+/* TODO SECTION */
+
+#todoSection {
+    background: #002453;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#todoSection h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 150%;
+    font-family: 'Lato';
+    color: #afd2ff;
+    font-weight: bold;
+}
+#todoList {
+    background: #afd2ff;
+    min-height: 400px;
+    width: 80%;
+    list-style-position: inside;
+    padding: 10px;
+    border-radius: 10px;
+}
+#todoList li {
+    margin-bottom: 10px;
+    font-family: 'Lato';
+}
+#todoList li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+/* EVENTS SECTION */
+
+#eventsSection {
+    background: #002453;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#eventsSection h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 150%;
+    font-family: 'Lato';
+    color: #afd2ff;
+    font-weight: bold;
+}
