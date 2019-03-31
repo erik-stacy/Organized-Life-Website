@@ -93,22 +93,48 @@ header a:visited {
     color: #afd2ff;
     font-weight: bold;
 }
+#newNoteButton {
+    margin-bottom: 30px;
+    padding: 10px;
+    background: #afd2ff;
+}
 #noteList {
     background: #afd2ff;
     min-height: 400px;
     width: 80%;
     list-style-position: inside;
-    padding: 10px;
+    list-style: none;
+    padding: 20px;
     border-radius: 10px;
 }
 #noteList li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
     font-family: 'Lato';
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 15px;
 }
 #noteList li:last-child {
     margin-bottom: 0;
 }
-
+#noteList li:before {
+    content: "•";
+    font-size: 80%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+#noteList textarea {
+    border: none;
+    resize: none;
+    background: #afd2ff;
+    width: 95%;
+    height: 100%;
+    font-family: 'Lato';
+}
 
 
 
@@ -141,7 +167,7 @@ header a:visited {
     min-height: 400px;
     width: 80%;
     list-style-position: inside;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
 }
 #todoList li {
